@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+    var str = prompt("Nhập chữ: ");
+    var thuong = 'abcdefghijklmnopqrstuvwxyză';
+    var hoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZĂ';
+    var ketqua = [];
+    
+    for (var i = 0; i < str.length ; i++) 
+    {
+      if (hoa.indexOf(str[i]) !== -1) 
+      {
+        ketqua.push(str[i].toLowerCase());
+      }
+      else if(thuong.indexOf(str[i]) !== -1) 
+      {
+        ketqua.push(str[i].toUpperCase());
+      }
+      
+        else ketqua.push(str[i]);
+      }
+    
+    document.write(ketqua.join(""));
+  </script>
+
+</body>
+</html>

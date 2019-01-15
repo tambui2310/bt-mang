@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = parseInt(prompt("Nhập dãy số: "));
+		var array = number.toString();
+		var ketqua = [array[0]];
+		for (let i = 1; i < array.length; i++) {
+			if ((array[i-1] % 2 === 0) && (array[i] % 2 === 0)) {
+				ketqua.push('-', array[i]);
+			}
+			else
+				ketqua.push(array[i]);
+		}
+		document.write(ketqua.join(""));
+	</script>
+
+</body>
+</html>
