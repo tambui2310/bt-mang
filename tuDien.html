@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" id="english" placeholder="Nhập tiếng anh">
+	<input type="button" onclick="dich()"  value="Tìm">
+	<p id="out"></p>
+	<script type="text/javascript">
+		function dich() {
+		var anh = ["hello", "goodbye", "football"];
+		var viet = ["xin chào", "tạm biệt", "bóng đá"];
+		var value = document.getElementById('english').value;
+		for (var i = 0; i < anh.length; i++) {
+			if (value === anh[i] ) {
+				document.getElementById('out').innerHTML = viet[i];
+				break;
+			}
+			else document.getElementById('out').innerHTML = "Không tìm thấy";
+		}
+		}
+		
+
+		
+	</script>
+
+</body>
+</html>
